@@ -98,9 +98,9 @@ export default function Easy() {
       />
     ))
   ), [randomArray, cardStates, handleCardClick, disabled, matchedCards]);
-
   return (
     <>    
+    <div className='hidden'>{clickedCount}</div>
     <Sucess mode='Easy' op={sucess} />
     {showStars && <Stars apply={true} />}
     <div className='w-full flex items-center overflow-hidden'>

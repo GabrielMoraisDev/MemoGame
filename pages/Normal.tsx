@@ -19,7 +19,7 @@ function shuffleArray(array: number[]) {
   return array;
 }
 
-export default function normal() {
+export default function Normal() {
   const [clickedCount, setClickedCount] = useState(0);
   const [cardStates, setCardStates] = useState(Array(20).fill(false));
   const [matchedCards, setMatchedCards] = useState<boolean[]>(Array(20).fill(false));
@@ -98,9 +98,9 @@ export default function normal() {
       />
     ))
   ), [randomArray, cardStates, handleCardClick, disabled, matchedCards]);
-
   return (
     <>    
+    <div className='hidden'>{clickedCount}</div>
     <Sucess mode='normal' op={sucess} />
     {showStars && <Stars apply={true} />}
     <div className='w-full flex items-center overflow-hidden'>
