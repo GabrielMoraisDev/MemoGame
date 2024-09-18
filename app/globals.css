@@ -2,12 +2,159 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #dce5f1;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  overflow: hidden;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+.ani{
+  margin-top: 2rem;
+  opacity: 1;
+  animation: animate ease-in-out 1s;
+}
+
+@keyframes animate{
+  0%{
+    margin-top: 8rem;
+    opacity: 0;
+  }
+  100%{
+    margin-top: 2rem;
+    opacity: 1;
+  }
+}
+
+.star1{
+  animation: star1 ease-in-out 0.8s;
+  bottom: 1rem;
+  left: 0rem;
+  transform: rotate(-80deg);
+  opacity: 0;
+}
+
+.star2{
+  animation: star2 ease-in-out 0.8s;
+  top: 1rem;
+  right: 1rem;
+  transform: rotate(-80deg);
+  opacity: 0;
+}
+
+.dot{
+  animation: dote ease-in-out 0.8s;
+  opacity: 0;
+}
+
+.dot2{
+  animation: dote2 ease-in-out 0.8s;
+  opacity: 0;
+}
+
+@keyframes star1{
+  0%{
+    opacity: 0;
+    bottom: -2rem;
+    transform: rotate(20deg);
+  }
+
+  50%{
+    opacity: 1;
+  }
+
+  80%{
+    opacity: 1;
+    bottom: 1rem;
+    transform: rotate(-80deg);
+  }
+
+  100%{
+    opacity: 0;
+    bottom: 1rem;
+    transform: rotate(-80deg);
+  }
+}
+
+@keyframes star2{
+  0%{
+    opacity: 0;
+    top: -2rem;
+    transform: rotate(20deg);
+  }
+
+  50%{
+    opacity: 1;
+  }
+
+  80%{
+    opacity: 1;
+    top: 1rem;
+    transform: rotate(-80deg);
+  }
+
+  100%{
+    opacity: 0;
+    top: 1rem;
+    transform: rotate(-80deg);
+  }
+}
+
+@keyframes dote{
+  0%{
+    opacity: 0;
+    top: -2rem;
+    left: -2rem;
+  }
+
+  50%{
+    opacity: 1;
+  }
+
+  80%{
+    opacity: 1;
+    top: 1rem;
+    left: 1rem;
+  }
+
+  100%{
+    opacity: 0;
+    top: 1rem;
+    left: 1rem;
+  }
+}
+
+@keyframes dote2{
+  0%{
+    opacity: 0;
+    bottom: -2rem;
+    right: -2rem;
+  }
+
+  50%{
+    opacity: 1;
+  }
+
+  80%{
+    opacity: 1;
+    bottom: 1rem;
+    right: 1rem;
+  }
+
+  100%{
+    opacity: 0;
+    bottom: 1rem;
+    right: 1rem;
   }
 }
