@@ -38,7 +38,7 @@ body {
 }
 
 .star1{
-  animation: star1 ease-in-out 0.8s;
+  animation: star1 ease-in-out 1s;
   bottom: 1rem;
   left: 0rem;
   transform: rotate(-80deg);
@@ -46,7 +46,7 @@ body {
 }
 
 .star2{
-  animation: star2 ease-in-out 0.8s;
+  animation: star2 ease-in-out 1s;
   top: 1rem;
   right: 1rem;
   transform: rotate(-80deg);
@@ -54,12 +54,12 @@ body {
 }
 
 .dot{
-  animation: dote ease-in-out 0.8s;
+  animation: dote ease-in-out 1s;
   opacity: 0;
 }
 
 .dot2{
-  animation: dote2 ease-in-out 0.8s;
+  animation: dote2 ease-in-out 1s;
   opacity: 0;
 }
 

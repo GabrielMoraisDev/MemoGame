@@ -37,7 +37,7 @@ const Success = ({ mode, op }: SucessProps) => {
     }, [op]); // Reexecuta o efeito quando 'op' mudar
 
     return (
-        <div className={`absolute w-[80%] text-emerald-200 p-5 h-auto bg-emerald-800 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-md duration-300 ${op ? 'visible z-50' : 'hidden z-10'}`}>
+        <div className={`absolute w-[80%] md:w-[40%] lg:w-[30%] xl:w-[33%] 2xl:w-[13%] text-emerald-200 p-5 h-auto bg-emerald-800 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-md duration-300 ${op ? 'visible z-50' : 'hidden z-10'}`}>
             <div className=' justify-center items-center text-center text-2xl'>
                 A dificuldade {mode} foi superada em 
                 <p className='text-4xl mt-3 text-white'>

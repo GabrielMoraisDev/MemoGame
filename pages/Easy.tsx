@@ -79,8 +79,10 @@ export default function Easy() {
           setCardStates(Array(10).fill(false));
           setDisabled(false);
           setLastImg(null);
-          setShowStars(false); // Esconder o componente Stars após o reset
-        }, 1000);
+        }, 700);
+        setTimeout(() => {
+          setShowStars(false);
+        }, 1100); 
       }
       return newCount;
     });
