@@ -4,6 +4,7 @@ import HomeBtn from '../components/HomeBtn';
 import Stars from '../components/Stars';
 import Sucess from '../components/Sucess';
 import Timer from '../components/Timer';
+import Head from 'next/head';
 import { useState, useEffect, useCallback, useMemo } from 'react';
 
 function shuffleArray(array: number[]) {
@@ -101,7 +102,11 @@ export default function Easy() {
     ))
   ), [randomArray, cardStates, handleCardClick, disabled, matchedCards]);
   return (
-    <>    
+    <div>    
+    <Head>
+        <title>Easy - Memo Game</title>
+        <meta name="description" content="Memory Game created by Gabriel Morais" />
+    </Head>
     <div className='hidden'>{clickedCount}</div>
     <Sucess mode='Easy' op={sucess} />
     {showStars && <Stars apply={true} />}
@@ -110,11 +115,11 @@ export default function Easy() {
       <div className="inline w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <p className='text-2xl text-center mb-5 text-teal-600 font-bold'>Easy Mode</p>
         {sucess === false ? <Timer></Timer>: <p className='text-center m-auto text-2xl mb-5 text-teal-600'>Parabéns!</p>}
-        <div className='grid grid-rows-5 grid-cols-2 w-[55%] md:w-[20%] lg:w-[30%] xl:w-[13%] 2xl:w-[13%] gap-0 m-auto flex place-items-center h-[68vh]'>
+        <div className='grid grid-rows-5 grid-cols-2 w-[55%] md:w-[20%] lg:w-[30%] xl:w-[13%] 2xl:w-[13%] gap-0 m-auto place-items-center h-[68vh]'>
           {cards}
         </div>
       </div>
     </div>
-    </>
+    </div>
   );
 }
