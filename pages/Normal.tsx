@@ -115,7 +115,7 @@ export default function Normal() {
       <div className="inline w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <p className='text-2xl text-center mb-5 text-sky-600 font-bold'>Normal Mode</p>
         {sucess === false ? <Timer></Timer>: <p className='text-center m-auto text-2xl mb-5 text-sky-600'>Parabéns!</p>}
-        <div className='grid grid-rows-5 grid-cols-4 w-[95%] md:w-[35%] lg:w-[35%] xl:w-[23%] 2xl:w-[25%] gap-0 m-auto place-items-center h-[68vh]'>
+        <div className='flex flex-wrap gap-3 text-center w-[20rem] md:w-[40%] lg:w-[30%] xl:w-[30%] 2xl:w-[30%] m-auto place-items-center'>
           {cards}
         </div>
       </div>

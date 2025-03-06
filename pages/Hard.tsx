@@ -115,7 +115,7 @@ export default function Easy() {
       <div className="inline w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <p className='text-2xl text-center mb-5 text-red-600 font-bold'>Hard Mode</p>
         {sucess === false ? <Timer></Timer>: <p className='text-center m-auto text-2xl mb-5 text-hard-600'>Parabéns!</p>}
-        <div className='grid grid-rows-8 grid-cols-5 w-[95%] md:w-[30%] lg:w-[35%] xl:w-[23%] 2xl:w-[25%] gap-0 m-auto place-items-center h-[78vh]'>
+        <div className='flex flex-wrap gap-3 text-center w-[20rem] md:w-[40%] lg:w-[30%] xl:w-[30%] 2xl:w-[30%] m-auto place-items-center'>
           {cards}
         </div>
       </div>

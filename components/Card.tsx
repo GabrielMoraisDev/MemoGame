@@ -36,7 +36,7 @@ export default function Card({ img, color, onCardClick, changed, disabled }: Car
   const bgLightClass = colorBgLightMap[color] || 'bg-gray-200';
 
   return (
-    <div className={`relative flex justify-center items-center m-4 ${color === 'easy' ? 'w-20 h-20' : (color === 'normal' ? 'w-16 h-16' : 'w-12 h-12')}`}>
+    <div className={`relative flex justify-center items-center m-auto text-center ${color === 'easy' ? 'w-20 h-20' : (color === 'normal' ? 'w-16 h-16' : 'w-12 h-12')}`}>
       <Image 
         src="/img/mistery.png" 
         alt="" 
